@@ -1,7 +1,9 @@
 name: Vérification de la PR
 on:
+  pull_request_target:
+    branches: [ master ]
   pull_request:
-    types: [opened, synchronize]
+    types: [ opened, synchronize ]
   push:
     branches:
       - '*'
